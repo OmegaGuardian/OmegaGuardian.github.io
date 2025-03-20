@@ -1,0 +1,187 @@
+<!-- =======================================================
+  * Nom du projet : Portfolio
+  * Creation : Decembre 2024
+  * Auteur : BLUM Clement
+  ======================================================== -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio BTS SIO | Clement BLUM </title>
+  
+  
+    <link href="../cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+    <!-- Icones -->
+    <link href="img/Portfolio_Icone.webp" rel="icon">
+    <link href="img/Portfolio_Icone.webp" rel="apple-touch-icon">
+    <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Liens CSS -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Principal Fichier CSS Template -->
+    <link href="E5.E6.css" rel="stylesheet">
+    <link href="0All.css" rel="stylesheet">
+    <!-- Liens JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.0.1/luxon.min.js"></script>
+    <script src="portfolio/js/main.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="portfolio/js/flip-box.js"></script>
+    <script src="particles.js-master/app.js"></script>
+    <script src="particles.js-master/package.json"></script>
+    <script src="particles.js-master/particles.js"></script>
+    <script src="particles.js-master/particles.min.js"></script>
+    <script src="particles.js-master/particles.json"></script>
+    
+  </head>
+  
+  <body>
+  <script src="../cdn.jsdelivr.net/npm/%40popperjs/core%402.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="../cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <script src="../cdn.jsdelivr.net/npm/bootstrap%405.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <div id="clockDisplay" style="color: white; text-align: center; font-size: large; font-family: arial;"></div>
+    
+        <script src="../moment.github.io/luxon/global/luxon.js"></script>
+        <script>
+          // Définir la localisation en français pour les mois et jours
+          luxon.Settings.defaultLocale = 'fr';
+    
+          // Fonction pour mettre à jour l'affichage de l'horloge
+          function updateClock() {
+            const now = luxon.DateTime.local();
+            const dayOfWeek = now.toFormat('cccc'); // Obtenir le jour de la semaine
+            const capitalizedDayOfWeek = dayOfWeek.charAt(0).toUpperCase() + dayOfWeek.slice(1); // Mettre en majuscule la première lettre du jour
+            const formattedTime = now.toFormat('HH:mm:ss'); // Heure au format HH:mm:ss
+            const formattedDate = capitalizedDayOfWeek + ', ' + now.toFormat('dd LLLL yyyy');
+    
+            // Concaténer la date et l'heure avec un saut de ligne entre eux
+            document.getElementById("clockDisplay").innerHTML = formattedDate + '<br>' + formattedTime;
+          }
+    
+          // Mettre à jour l'horloge toutes les secondes
+          setInterval(updateClock, 1000); // Mettre à jour chaque seconde (1000 ms)
+          // Appeler la fonction initiale pour afficher l'heure actuelle
+          updateClock();
+        </script>
+    
+        <br>
+    
+        <h1 class="text-light">
+          <a style="color: white; font-size: x-large" onmouseover="this.style.color='grey'" onmouseout="this.style.color='white'">Clément BLUM</a>
+        </h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://wa.me/33766136117" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+          <a href="mailto:blum.clement75@gmail.com" class="gmail"><i class="bx bxl-gmail"></i></a>
+          <a href="https://www.linkedin.com/in/clément-blum-498383291/" class="github"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav style="font-size: small" id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Profil</span></a></li>
+          <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bxs-graduation"></i> <span>Parcours</span></a></li>
+          <li><a href="index.html#stages" class="nav-link scrollto"><i class='bx bxs-briefcase'></i> <span>Stages</span></a></li>
+          <li><a href="Certif.html" class="nav-link scrollto"><i class='bx bx-desktop'></i> <span>Certification</span></a></li>
+          <li><a href="E5.html" class="nav-link scrollto active"><i class="bx bx-book-content"></i><span>Épreuve E5</span></a></li>
+          <li><a href="E6.html" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Épreuve E6</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>  
+  </header>
+  <!-- Fin Header -->
+  <main id="main">
+    <!-- ======= Menu ======= -->
+    <section style="border-bottom: solid" id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 style="font-size: xx-large">ÉPREUVE E5 - Support et mise à disposition de services informatiques </h1>
+          <ol style="font-size: 20px">
+            <li><a style="color:#0e2442; text-decoration: underline" href="index.html"><b><i
+                    class="bi bi-caret-left-fill"></i> Revenir à l'accueil</b></a></li>
+            <li>ÉPREUVES</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- Fin Menu -->
+    <!-- ======= Projet Section ======= -->
+    <section>
+      <div style="margin-right: 20px;margin-left: 20px" class="portfolio-description">
+        <h1 style="text-decoration: underline; font-size: xx-large">Présentation de l'Épreuve E5</h1>
+        <br>
+        <h3 style="text-decoration: underline; font-size: x-large">Objectif : </h3> <br>
+        <p style="text-align: justify"> <span class="alinea-text"> Cette </span> épreuve vise à évaluer chez la personne candidate
+          l’acquisition des compétences décrites dans le bloc de compétences « Support et mise à disposition de services informatiques »
+        </p>
+        <br>
+        <h3 style="text-decoration: underline; font-size: x-large">Modalités d'évaluation : </h3> <br>
+        <p><b>Forme ponctuelle orale (durée 40 minutes) :</b></p><br>
+        <p style="text-align: justify"> <span class="alinea-text"> L’épreuve</span> L’épreuve comporte deux phases consécutives.
+          Pendant 10 minutes (maximum) la personne candidate présente son parcours de professionnalisation et justifie les modalités
+          d’acquisition des compétences du bloc « Support et mise à disposition de services informatiques ».
+          S’en suit 30 minutes d’échange avec le jury qui permettent, d’une part, d’expliciter et d’apprécier le parcours de
+          professionnalisation et, d’autre part, d’approfondir une ou plusieurs réalisations décrites dans le dossier numérique.
+          L’entretien permet d’apprécier la capacité de la personne candidate à mobiliser les compétences visées, sa capacité à
+          rendre compte d’un travail réalisé au sein d’une équipe projet en mettant clairement en évidence sa contribution personnelle.
+        </p>
+      </div>
+        <div class="container">
+          <div class="categorie"><button onclick="toggleCategorie('cat0')">Tableau de synthese </button></div>
+          <div class="categorie"><button onclick="toggleCategorie('cat1')">PPE n°1 : CNTS/3117 </button></div>
+          <div class="categorie"><button onclick="toggleCategorie('cat2')">PPE n°2 : Installation Poste POCO </button></div>
+          <div class="categorie"><button onclick="toggleCategorie('cat3')">PPE n°3 : Brassage d'une baie</button></div>
+          <div class="categorie"><button onclick="toggleCategorie('cat4')">PPE n°4 : Assistance Utilisateur</button></div>
+          <div class="categorie"><button onclick="toggleCategorie('cat5')">PPE n°5 : Pilot'R</button></div>
+        </div>
+
+        <div class="contenu-container">
+          <div class="contenu" id="cat0"><iframe src="pdf/E5/E4_Tableau_de_synthese_v1.pdf" type="application/pdf" width="80%" height="1000px"></iframe></div>
+          <div class="contenu" id="cat1"><iframe src="pdf/E5/E4 n°1 CNTS.3117_v2.pdf" type="application/pdf" width="80%" height="1000px"></iframe></div>
+          <div class="contenu" id="cat2">
+            <iframe src="pdf/E5/E4 n°2 Installation Poste POCO_v1.pdf" type="application/pdf" width="80%" height="1000px"></iframe>
+            <iframe src="pdf/E5/Installation Poste POCO_v1.pdf" type="application/pdf" width="80%" height="1000px"></iframe>
+          </div>
+          <div class="contenu" id="cat3"><iframe src="pdf/E5/E4 n°3 Brassage d'une baie_v2.5.pdf" type="application/pdf" width="80%" height="1000px"></iframe></div>
+          <div class="contenu" id="cat4"><iframe src="pdf/E5/E4 n°4 Assistance Utilisateur_v1.pdf" type="application/pdf" width="80%" height="1000px"></iframe></div>
+          <div class="contenu" id="cat5"><iframe src="pdf/E5/E4 n°5 PilotR_v1.pdf" type="application/pdf" width="80%" height="1000px"></iframe></div>
+        </div>
+
+        <button class="btn-fermer" onclick="fermerToutesCategories()">Fermer tout</button>
+      </div>
+      
+    </section>
+    <!-- Fin Projet Section -->
+  </main>
+  
+  <script src="E5.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/ajax/jquery/2.1.3/jquery.min.js"></script>
+  <script src="assets/js/flip-box.js"></script>
+</body>
+</html>  
