@@ -5,30 +5,31 @@
   ======================================================== -->
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio BTS SIO | Clément BLUM </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio BTS SIO | Clément BLUM</title>
 
   <!-- Icones -->
-  <link href="img/Portfolio_Icone.webp" rel="icon">
-  <link href="img/Portfolio_Icone.webp" rel="apple-touch-icon">
-  <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+  <link href="img/Portfolio_Icone.webp" rel="icon" />
+  <link href="img/Portfolio_Icone.webp" rel="apple-touch-icon" />
+  <link rel="stylesheet" href="assets/icofont/icofont.min.css" />
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    rel="stylesheet" />
   <!-- Liens CSS -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="assets/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Principal Fichier CSS Template -->
-  <link href="index.css" rel="stylesheet">
-  <link href="0All.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet" />
+  <link href="0All.css" rel="stylesheet" />
   <!-- Liens JS  -->
   <script src="assets/luxon/luxon.js"></script>
   <script src="assets/js/main.js"></script>
@@ -56,18 +57,21 @@
         <script src="assets/luxon/luxon.js"></script>
         <script>
           // Definir la localisation en francais pour les mois et jours
-          luxon.Settings.defaultLocale = 'fr';
+          luxon.Settings.defaultLocale = "fr";
 
           // Fonction pour mettre a jour l'affichage de l'horloge
           function updateClock() {
             const now = luxon.DateTime.local();
-            const dayOfWeek = now.toFormat('cccc'); // Obtenir le jour de la semaine
-            const capitalizedDayOfWeek = dayOfWeek.charAt(0).toUpperCase() + dayOfWeek.slice(1); // Mettre en majuscule la première lettre du jour
-            const formattedTime = now.toFormat('HH:mm:ss'); // Heure au format HH:mm:ss
-            const formattedDate = capitalizedDayOfWeek + ', ' + now.toFormat('dd LLLL yyyy');
+            const dayOfWeek = now.toFormat("cccc"); // Obtenir le jour de la semaine
+            const capitalizedDayOfWeek =
+              dayOfWeek.charAt(0).toUpperCase() + dayOfWeek.slice(1); // Mettre en majuscule la première lettre du jour
+            const formattedTime = now.toFormat("HH:mm:ss"); // Heure au format HH:mm:ss
+            const formattedDate =
+              capitalizedDayOfWeek + ", " + now.toFormat("dd LLLL yyyy");
 
             // Concatener la date et l'heure avec un saut de ligne entre eux
-            document.getElementById("clockDisplay").innerHTML = formattedDate + '<br>' + formattedTime;
+            document.getElementById("clockDisplay").innerHTML =
+              formattedDate + "<br>" + formattedTime;
           }
 
           // Mettre a jour l'horloge toutes les secondes
@@ -75,10 +79,9 @@
           // Appeler la fonction initiale pour afficher l'heure actuelle
           updateClock();
         </script>
-        <br>
+        <br />
         <h1 class="text-light">
-          <a style="color: white; font-size: x-large" onmouseover="this.style.color='grey'"
-            onmouseout="this.style.color='white'">Clément BLUM</a>
+          <a style="color: white; font-size: x-large" onmouseover="this.style.color='grey'"onmouseout="this.style.color='white'">Clément BLUM</a>
         </h1>
         <div class="social-links mt-3 text-center">
           <a href="https://wa.me/33766136117" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
@@ -91,12 +94,10 @@
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Profil</span></a></li>
-          <li><a href="#formation" class="nav-link scrollto"><i class="bx bxs-graduation"></i> <span>Parcours</span></a></li>
-          <li><a href="#stages" class="nav-link scrollto"><i class='bx bxs-briefcase'></i> <span>Stages</span></a></li>
-          <li><a href="Certif.html" class="nav-link scrollto"><i class='bx bx-desktop'></i> <span>Certification</span></a></li>
+          <li><a href="#formation" class="nav-link scrollto"><i class="bx bxs-graduation"></i><span>Parcours</span></a></li>
+          <li><a href="Certif.html" class="nav-link scrollto"><i class="bx bx-desktop"></i><span>Certification</span></a></li>
           <li><a href="E5.html" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Épreuve E5</span></a></li>
           <li><a href="E6.html" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Épreuve E6</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav>
     </div>
@@ -104,29 +105,173 @@
   <!-- Fin Header -->
 
   <!-- ======= Home Section ======= -->
-  <main>
-    <div>
-      <!-- particles.js -->
-      <div style="background-image: url('img/Portfolio_background.jpeg'); background-size: cover" id="particles-js">
-        <div id="hero">
-          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-            <h1>Clément BLUM</h1>
-            <p>ÉTUDIANT EN BTS SIO - OPTION SISR</p>
-            <p><b><span class="typed" data-typed-items="Bienvenue sur mon Portfolio"></span></b></p>
+  <div>
+    <!-- particles.js -->
+    <div style="background-image: url('img/Portfolio_background.jpeg'); background-size: cover;" id="particles-js">
+      <div id="hero">
+        <div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+          <h1>Clément BLUM</h1>
+          <p>ÉTUDIANT EN BTS SIO - OPTION SISR</p>
+          <p><b><span class="typed" data-typed-items="Bienvenue sur mon Portfolio"></span></b></p>
+        </div>
+        <div class="arrow-scroll">
+          <div class="arrow-scroll__wrap arrow-scroll__wrap_animated">
+            <a href="#about"><img class="img-scroll" src="img/Portfolio_background2.png" alt="Scroll down" /></a>
           </div>
-          <div class="arrow-scroll">
-            <div class="arrow-scroll__wrap arrow-scroll__wrap_animated">
-              <a href="#about"><img class="img-scroll" src="img/Portfolio_background2.png" alt="Scroll down"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="assets/particles.js-master/particles.js"></script>
+    <script src="assets/particles.js-master/app.js"></script>
+  </div>
+  <main id="main">
+    <!-- ======= Profil Section  ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>A PROPOS DE MOI 💭</h2>
+          <!--suppress HtmlDeprecatedAttribute -->
+          <p style="text-align: justify">
+            <span class="alinea-text">Je</span> suis étudiant depuis 2 ans à <b>AURLOM</b> situé à Paris (19eme)
+            en deuxième année de <b>BTS SIO</b> (Services Informatiques aux Organisations), spécialité <b>SISR</b>
+            (Solutions d'Infrastructure, Systèmes et Réseaux).<br/>
+            J’ai toujours eu une attirance pour l’informatique et une curiosité pour la technologies.
+            C’est tout naturellement que je me suis tourné vers cette formation, après avoir obtenu mon
+            <b>BAC Professionnel SN (Système Numérique) - Mention Très Bien</b> en 2023.
+          </p>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="row">
+            <div style="width: 75%" class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <br/>
+              <div>
+                <h3><span class="alinea-text"> - </span> Étudiant en BTS SIO (2023 - 2025) 🤵 </h3>
+                <br/>
+                <p class="fst-italic"> Étudiant de 2ᵉ année en BTS SIO - option SISR à Aurlom situé à Paris 19 </p>
+                <br/>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i><strong>École :</strong><span>Aurlom - Paris 19 </span></li>
+                      <li><i class="bi bi-chevron-right"></i><strong>Diplômes :</strong><span>BAC Professionnel SN - Mention Très Bien</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul>
+                      <li><i class="bi bi-chevron-right"></i><strong>Telephone :</strong><span><a style="color: black" href="tel:0766136117">07 66 13 61 17</a></span></li>
+                      <li><i class="bi bi-chevron-right"></i><strong>Email :</strong><span><a style="color: black" href="mailto:blum.clement75@gmail.com">blum.clement75@gmail.com</a></span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- scripts -->
-      <script src="assets/particles.js-master/particles.js"></script>
-      <script src="assets/particles.js-master/app.js"></script>
-    </div>
-  </main>
+    </section>
+    <!-- Fin Profil Section -->
 
+    <!-- ======= Parcours Section ======= -->
+    <section style="background: linear-gradient(180deg, rgba(189,205,208,1) 0%, rgba(255,255,255,1) 30%);" id="formation" class="formation">
+      <div class="container">
+        <div class="section-title">
+          <h2>Parcours 🎓</h2>
+          <p><i> Mon cursus scolaire et mon parcours professionnel.</i></p>
+        </div>
+        <div class="row">
+          <div style="padding-left: 40px" class="col-lg-6" data-aos="fade-right">
+            <h3 class="formation-title">Cursus scolaire 🏫</h3>
+            <div class="formation-item">
+              <h4>BTS SIO</h4>
+              <h5>2023 - A ce jour</h5>
+              <p><em>BTS SIO - OPTION SISR</em></p>
+              <p>ÉCOLE Aurlom (75019 - Paris)</p>
+            </div>
+            <div class="formation-item">
+              <h4>LYCEE Professionnel </h4>
+              <h5>2020 - 2023</h5>
+              <p><em>BAC PROFESSIONNEL SYSTEME NUMÉRIQUE - OPTION RISC (RÉSEAUX INFORMATIQUE ET SYSTÈMES COMMUNICANTS) <br> Mention Très Bien</em></p>
+              <p>LYCÉE PROFESSIONNEL GUSTAVE FERRIE (75010 - Paris)</p>
+            </div>
+            <div class="formation-item">
+              <h4>COLLEGE</h4>
+              <h5>2016 - 2020</h5>
+              <p>COLLEGE GUILLAUME BUDÉ (75019 - Paris)</p>
+            </div>
+          </div>
+
+
+          <div style="padding-right: -10px" class="col-lg-6" data-aos="fade-left">
+            <h3 class="formation-title">Expériences professionnelles 💼</h3>
+            <div class="formation-item">
+              <h4>ALTERNANCE SNCF SURETE</h4>
+              <h5>2023-2025 (2 ans)</h5>
+              <p><em>Alternance pendant le BTS SIO. <br> Alternance chez SNCF Surete au sein du service DSI de la Maison de la surete </em></p>
+              <ul>
+                <li>SNCF - Maison de la Surete <br><i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/9bQhPYLk4F7hQxuG6" target="_blank">116 Rue de Maubeuge, 75010 Paris</a></li>
+                <li><i class="bi bi-globe2"></i> <a href="https://www.surete-ferroviaire.sncf.com/" target="_blank">Site de SNCF Surete</a></li>
+              </ul>
+            </div>
+
+            <div class="formation-item">
+              <h4>Stage SNCF SURETE</h4>
+              <h5>janvier 2023 (4 semaine)</h5>
+              <p><em>Stage de 4 semaine pour le BAC Pro SN. <br> Stage chez SNCF Surete au sein du service DSI de la Maison de la surete </em></p>
+              <ul>
+                <li>SNCF - Maison de la Surete <br><i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/9bQhPYLk4F7hQxuG6" target="_blank">116 Rue de Maubeuge, 75010 Paris</a></li>
+                <li><i class="bi bi-globe2"></i> <a href="https://www.surete-ferroviaire.sncf.com/" target="_blank">Site de SNCF Surete</a></li>
+              </ul>
+            </div>
+            
+            <div class="formation-item">
+              <h4>Stage PC SERVICE IDF</h4>
+              <h5>octobre 2022 (4 semaine)</h5>
+              <p><em>Stage de 4 semaine pour le BAC Pro SN. <br> Stage chez PC SERVICE IDF qui est prestataire de prestataire de IBM et qui fait aussi de la réparation de PC</em></p>
+              <ul>
+                <li>PC SERVICE IDF<br><i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/kwh6fx7UgARFcG5T8" target="_blank">Z.A. de l'Ourcq, 45 Rue Delizy 2ème étage Lot 238, 93500 Pantin</a></li>
+                <li><i class="bi bi-globe2"></i> <a href="https://pcservice-idf.fr/" target="_blank">Site de PC SERVICE IDF</a></li>
+              </ul>
+            </div>
+
+            <div class="formation-item">
+              <h4>Stage All Repair</h4>
+              <h5>Courant 2022 (4 semaine)</h5>
+              <p><em>Stage de 4 semaine pour le BAC Pro SN. <br> Stage chez AllRepair qui est un réparateur de téléphone et d'ordinateur spécialisé dans les mac il font aussi du windows</em></p>
+              <ul>
+                <li>AllRepair<br><i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/WkHuBPhZUGvSRCHy5" target="_blank">73 R. de Lévis, 75017 Paris</a></li>
+              </ul>
+            </div>
+
+
+            <div class="formation-item">
+              <h4>Stage SNCF SURETE</h4>
+              <h5>décembre 2021 (4 semaine)</h5>
+              <p><em>Stage de 4 semaine pour le BAC Pro SN. <br> Stage chez SNCF Surete au sein du service DSI de la Maison de la surete </em></p>
+              <ul>
+                <li>SNCF - Maison de la Surete <br><i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/9bQhPYLk4F7hQxuG6" target="_blank">116 Rue de Maubeuge, 75010 Paris</a></li>
+                <li><i class="bi bi-globe2"></i> <a href="https://www.surete-ferroviaire.sncf.com/" target="_blank">Site de SNCF Surete</a></li>
+              </ul>
+            </div>
+
+            <div class="formation-item">
+              <h4>Stage SNCF SURETE</h4>
+              <h5>mai 2021 (5 semaine)</h5>
+              <p><em>Stage de 5 semaine pour le BAC Pro SN. <br> Stage chez SNCF Surete au sein du service DSI de la Maison de la surete </em></p>
+              <ul>
+                <li>SNCF - Maison de la Surete <br><i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/9bQhPYLk4F7hQxuG6" target="_blank">116 Rue de Maubeuge, 75010 Paris</a></li>
+                <li><i class="bi bi-globe2"></i> <a href="https://www.surete-ferroviaire.sncf.com/" target="_blank">Site de SNCF Surete</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Fin Parcours Section -->
+  </main>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -142,6 +287,6 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/ajax/jquery/2.1.3/jquery.min.js"></script>
   <script src="assets/js/flip-box.js"></script>
-
 </body>
+
 </html>
