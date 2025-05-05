@@ -28,16 +28,16 @@
 }
 
 .categorie button {
-    background: none;
+    background-color: #007bff;
+    color: white;
     border: none;
-    font-size: 16px;
+    padding: 10px;
     cursor: pointer;
-    width: 100%;
-    height: 100%;
-    padding: 0;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
     white-space: normal; /* Permet le retour à la ligne du texte */
 }
-
 .categorie button:hover {
     background-color: #0056b3;
 }
